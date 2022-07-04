@@ -11,6 +11,8 @@
 		E63C2434286DEE14004D4BD4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63C2433286DEE14004D4BD4 /* ContentView.swift */; };
 		E63C2436286DEE15004D4BD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E63C2435286DEE15004D4BD4 /* Assets.xcassets */; };
 		E63C2439286DEE15004D4BD4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E63C2438286DEE15004D4BD4 /* Preview Assets.xcassets */; };
+		E64602F628731A3D00B2ED61 /* TabBarIconContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64602F528731A3D00B2ED61 /* TabBarIconContainer.swift */; };
+		E64602F828731B0800B2ED61 /* TabBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64602F728731B0800B2ED61 /* TabBarIcon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		E63C2433286DEE14004D4BD4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E63C2435286DEE15004D4BD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E63C2438286DEE15004D4BD4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E64602F528731A3D00B2ED61 /* TabBarIconContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIconContainer.swift; sourceTree = "<group>"; };
+		E64602F728731B0800B2ED61 /* TabBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				E63C2431286DEE14004D4BD4 /* CloneTossApp.swift */,
 				E63C2433286DEE14004D4BD4 /* ContentView.swift */,
+				E64602F528731A3D00B2ED61 /* TabBarIconContainer.swift */,
+				E64602F728731B0800B2ED61 /* TabBarIcon.swift */,
 				E63C2435286DEE15004D4BD4 /* Assets.xcassets */,
 				E63C2437286DEE15004D4BD4 /* Preview Content */,
 			);
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E64602F828731B0800B2ED61 /* TabBarIcon.swift in Sources */,
+				E64602F628731A3D00B2ED61 /* TabBarIconContainer.swift in Sources */,
 				E63C2434286DEE14004D4BD4 /* ContentView.swift in Sources */,
 				E63C2432286DEE14004D4BD4 /* CloneTossApp.swift in Sources */,
 			);
