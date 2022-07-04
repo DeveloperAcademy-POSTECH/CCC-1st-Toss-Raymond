@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum TabBarIcon: CaseIterable {
+enum TabBarItem: CaseIterable {
     case home, benefit, remittance, stock, all
     
     var iconName: String {

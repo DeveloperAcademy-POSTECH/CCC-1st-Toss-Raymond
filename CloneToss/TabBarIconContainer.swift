@@ -8,24 +8,27 @@
 import SwiftUI
 
 struct TabBarIconContainer: View {
-    let imageName: String
-    let iconName: String
+    let tabName: TabBarItem
+    @ObservedObject var viewChanger: ViewChanger
     
     var body: some View {
 
         VStack(spacing: 5) {
-            Image(systemName: imageName)
+            Image(systemName: tabName.imageName)
                 .font(.title2)
-                
-            Text(iconName)
+            Text(tabName.iconName)
                 .font(.caption)
         }
+        .onTapGesture {
+            viewChanger.currentTab = tabName
+        }
+        .opacity(tabName == viewChanger.currentTab ? 1 : 0.5)
     }
 }
 
 struct TabBarIconContainer_Previews: PreviewProvider {
     static var previews: some View {
-        let icon = TabBarIcon.home
-        TabBarIconContainer(imageName: icon.imageName, iconName: icon.iconName)
+        let icon = TabBarItem.home
+        TabBarIconContainer(tabName: icon, viewChanger: ViewChanger())
     }
 }

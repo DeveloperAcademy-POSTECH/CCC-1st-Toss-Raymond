@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct CloneTossApp: App {
+    @StateObject private var viewChanger = ViewChanger()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewChanger: viewChanger)
         }
     }
 }

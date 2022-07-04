@@ -8,20 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewChanger: ViewChanger
     
     var body: some View {
         NavigationView {
         VStack {
+            switch viewChanger.currentTab {
+            case .home:
+                Home()
+            case .benefit:
+                Benefit()
+            case .remittance:
+                Remittance()
+            case .stock:
+                Stock()
+            case .all:
+                All()
+                
+            }
             Spacer()
             tabBar
-        }
-        .toolbar {
-            ToolbarItemGroup(placement: .navigationBarTrailing) {
-                HStack(spacing: 20) {
-                Image(systemName: "message.fill")
-                Image(systemName: "bell.fill")
-                }
-            }
         }
         .edgesIgnoringSafeArea(.bottom)
         }
@@ -32,8 +38,8 @@ struct ContentView: View {
     private var tabBar: some View {
         let insets = EdgeInsets(top: 10, leading:  20, bottom: 40, trailing: 20)
         HStack {
-            ForEach(TabBarIcon.allCases, id: \.self) {
-                TabBarIconContainer(imageName: $0.imageName, iconName: $0.iconName)
+            ForEach(TabBarItem.allCases, id: \.self) {
+                TabBarIconContainer(tabName: $0, viewChanger: viewChanger)
                     .frame(maxWidth: .infinity, alignment: .bottom)
             }
         }
@@ -44,6 +50,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(viewChanger: ViewChanger())
     }
 }
