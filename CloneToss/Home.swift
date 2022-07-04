@@ -10,7 +10,7 @@ import SwiftUI
 struct Home: View {
     var body: some View {
         ScrollView {
-            
+            AssetCellItem(image: "symbol-toss-blue", subTitle: "자산관리", title: "300000", buttonExist: true)
         }
         .toolbar {
             ToolbarItemGroup(placement: .navigationBarTrailing) {
