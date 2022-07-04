@@ -19,8 +19,9 @@
 		E6460300287335B600B2ED61 /* Remittance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64602FF287335B600B2ED61 /* Remittance.swift */; };
 		E6460302287335BD00B2ED61 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6460301287335BD00B2ED61 /* Stock.swift */; };
 		E6460304287335C400B2ED61 /* All.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6460303287335C400B2ED61 /* All.swift */; };
-		E6D6B0252873A0FA00A428EE /* AssetCellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D6B0242873A0FA00A428EE /* AssetCellItem.swift */; };
+		E6D6B0252873A0FA00A428EE /* CellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D6B0242873A0FA00A428EE /* CellItem.swift */; };
 		E6D6B0272873A65400A428EE /* extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D6B0262873A65400A428EE /* extension+String.swift */; };
+		E6D6B02A2873AC6A00A428EE /* CellHeadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D6B0292873AC6A00A428EE /* CellHeadline.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +38,9 @@
 		E64602FF287335B600B2ED61 /* Remittance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remittance.swift; sourceTree = "<group>"; };
 		E6460301287335BD00B2ED61 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		E6460303287335C400B2ED61 /* All.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = All.swift; sourceTree = "<group>"; };
-		E6D6B0242873A0FA00A428EE /* AssetCellItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCellItem.swift; sourceTree = "<group>"; };
+		E6D6B0242873A0FA00A428EE /* CellItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellItem.swift; sourceTree = "<group>"; };
 		E6D6B0262873A65400A428EE /* extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+String.swift"; sourceTree = "<group>"; };
+		E6D6B0292873AC6A00A428EE /* CellHeadline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellHeadline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +78,7 @@
 				E64602FF287335B600B2ED61 /* Remittance.swift */,
 				E6460301287335BD00B2ED61 /* Stock.swift */,
 				E6460303287335C400B2ED61 /* All.swift */,
-				E64602FB287335A700B2ED61 /* Home.swift */,
-				E6D6B0242873A0FA00A428EE /* AssetCellItem.swift */,
+				E6D6B0282873AC5500A428EE /* home */,
 				E6D6B0262873A65400A428EE /* extension+String.swift */,
 				E64602FD287335AD00B2ED61 /* Benefit.swift */,
 				E64602F92873311C00B2ED61 /* ViewChanger.swift */,
@@ -95,6 +96,16 @@
 				E63C2438286DEE15004D4BD4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E6D6B0282873AC5500A428EE /* home */ = {
+			isa = PBXGroup;
+			children = (
+				E6D6B0242873A0FA00A428EE /* CellItem.swift */,
+				E64602FB287335A700B2ED61 /* Home.swift */,
+				E6D6B0292873AC6A00A428EE /* CellHeadline.swift */,
+			);
+			path = home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E64602FE287335AD00B2ED61 /* Benefit.swift in Sources */,
+				E6D6B02A2873AC6A00A428EE /* CellHeadline.swift in Sources */,
 				E6D6B0272873A65400A428EE /* extension+String.swift in Sources */,
 				E64602F828731B0800B2ED61 /* TabBarItem.swift in Sources */,
 				E64602FA2873311C00B2ED61 /* ViewChanger.swift in Sources */,
@@ -175,7 +187,7 @@
 				E64602F628731A3D00B2ED61 /* TabBarIconContainer.swift in Sources */,
 				E63C2434286DEE14004D4BD4 /* ContentView.swift in Sources */,
 				E64602FC287335A700B2ED61 /* Home.swift in Sources */,
-				E6D6B0252873A0FA00A428EE /* AssetCellItem.swift in Sources */,
+				E6D6B0252873A0FA00A428EE /* CellItem.swift in Sources */,
 				E63C2432286DEE14004D4BD4 /* CloneTossApp.swift in Sources */,
 				E6460300287335B600B2ED61 /* Remittance.swift in Sources */,
 				E6460302287335BD00B2ED61 /* Stock.swift in Sources */,
