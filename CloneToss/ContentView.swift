@@ -26,7 +26,6 @@ struct ContentView: View {
                 All()
                 
             }
-            Spacer()
             tabBar
         }
         .edgesIgnoringSafeArea(.bottom)

@@ -8,27 +8,28 @@
 import SwiftUI
 
 extension Home {
-    struct AssetCellItem: View {
+    struct CellItem: View {
         
         private let image: String
         private let subTitle: String
         private let title: String
-        private let aboutRemittance: Bool
+        private let buttonExist: Bool
         
         init(image: String, subTitle: String, title: String, buttonExist: Bool) {
             self.image = image
             self.subTitle = subTitle
             self.title = title
-            self.aboutRemittance = buttonExist
+            self.buttonExist = buttonExist
         }
         
         var body: some View {
             HStack(spacing: 20) {
                 imageArea
                 textArea
-                Spacer()
-                buttonArea
-                
+                if buttonExist {
+                    Spacer()
+                    buttonArea
+                }
             }
         }
         
@@ -39,11 +40,7 @@ extension Home {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 50, height: 50)
-                .clipShape(Circle())
-                .overlay(
-                    Circle().stroke(lineWidth: 2))
-                .foregroundColor(.blue)
-        }
+            }
         
         var textArea: some View {
             VStack(alignment: .leading, spacing: 5) {

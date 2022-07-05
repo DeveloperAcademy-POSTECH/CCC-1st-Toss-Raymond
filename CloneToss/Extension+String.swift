@@ -12,7 +12,7 @@ extension String {
         let commaCount = (self.count - 1) / 3
         var value = self
         var comparedIndex = value.endIndex
-        for cnt in 0..<commaCount {
+        for _ in 0..<commaCount {
             comparedIndex = value.index(comparedIndex, offsetBy: -3)
             value.insert(",", at: comparedIndex)
         }
