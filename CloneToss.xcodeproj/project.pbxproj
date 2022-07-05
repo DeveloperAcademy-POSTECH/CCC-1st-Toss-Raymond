@@ -20,8 +20,10 @@
 		E6460302287335BD00B2ED61 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6460301287335BD00B2ED61 /* Stock.swift */; };
 		E6460304287335C400B2ED61 /* All.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6460303287335C400B2ED61 /* All.swift */; };
 		E6D6B0252873A0FA00A428EE /* CellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D6B0242873A0FA00A428EE /* CellItem.swift */; };
-		E6D6B0272873A65400A428EE /* extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D6B0262873A65400A428EE /* extension+String.swift */; };
+		E6D6B0272873A65400A428EE /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D6B0262873A65400A428EE /* Extension+String.swift */; };
 		E6D6B02A2873AC6A00A428EE /* CellHeadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D6B0292873AC6A00A428EE /* CellHeadline.swift */; };
+		E6D6B02C2873BAC900A428EE /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D6B02B2873BAC900A428EE /* Extension+View.swift */; };
+		E6D6B02E2873BAF000A428EE /* Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D6B02D2873BAF000A428EE /* Modifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +41,10 @@
 		E6460301287335BD00B2ED61 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		E6460303287335C400B2ED61 /* All.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = All.swift; sourceTree = "<group>"; };
 		E6D6B0242873A0FA00A428EE /* CellItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellItem.swift; sourceTree = "<group>"; };
-		E6D6B0262873A65400A428EE /* extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+String.swift"; sourceTree = "<group>"; };
+		E6D6B0262873A65400A428EE /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		E6D6B0292873AC6A00A428EE /* CellHeadline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellHeadline.swift; sourceTree = "<group>"; };
+		E6D6B02B2873BAC900A428EE /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
+		E6D6B02D2873BAF000A428EE /* Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +83,9 @@
 				E6460301287335BD00B2ED61 /* Stock.swift */,
 				E6460303287335C400B2ED61 /* All.swift */,
 				E6D6B0282873AC5500A428EE /* home */,
-				E6D6B0262873A65400A428EE /* extension+String.swift */,
+				E6D6B0262873A65400A428EE /* Extension+String.swift */,
+				E6D6B02B2873BAC900A428EE /* Extension+View.swift */,
+				E6D6B02D2873BAF000A428EE /* Modifier.swift */,
 				E64602FD287335AD00B2ED61 /* Benefit.swift */,
 				E64602F92873311C00B2ED61 /* ViewChanger.swift */,
 				E64602F528731A3D00B2ED61 /* TabBarIconContainer.swift */,
@@ -180,8 +186,9 @@
 			files = (
 				E64602FE287335AD00B2ED61 /* Benefit.swift in Sources */,
 				E6D6B02A2873AC6A00A428EE /* CellHeadline.swift in Sources */,
-				E6D6B0272873A65400A428EE /* extension+String.swift in Sources */,
+				E6D6B0272873A65400A428EE /* Extension+String.swift in Sources */,
 				E64602F828731B0800B2ED61 /* TabBarItem.swift in Sources */,
+				E6D6B02C2873BAC900A428EE /* Extension+View.swift in Sources */,
 				E64602FA2873311C00B2ED61 /* ViewChanger.swift in Sources */,
 				E6460304287335C400B2ED61 /* All.swift in Sources */,
 				E64602F628731A3D00B2ED61 /* TabBarIconContainer.swift in Sources */,
@@ -191,6 +198,7 @@
 				E63C2432286DEE14004D4BD4 /* CloneTossApp.swift in Sources */,
 				E6460300287335B600B2ED61 /* Remittance.swift in Sources */,
 				E6460302287335BD00B2ED61 /* Stock.swift in Sources */,
+				E6D6B02E2873BAF000A428EE /* Modifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

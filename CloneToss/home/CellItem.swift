@@ -26,8 +26,8 @@ extension Home {
             HStack(spacing: 20) {
                 imageArea
                 textArea
-                Spacer()
                 if buttonExist {
+                    Spacer()
                     buttonArea
                 }
             }
